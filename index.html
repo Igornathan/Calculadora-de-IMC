@@ -17,12 +17,12 @@
             <label id="Result"></label>
             <label id="Imagem"></label>
             <label>Escreva seu Nome:</label>
-            <input Id="Nome" type="text">
+            <input Id="Nome" type="text" required>
             <!--O atribulto step permite que possamos utilizar numeros decimais no input number-->
             <label>Escreva sua Altura:</label>
-            <input Id="Altura" type="Number" step="0.01">
+            <input Id="Altura" type="Number" step="0.01" required>
             <label>Escreva seu Peso:</label>
-            <input Id="Peso" type="Number" step="0.01" title="DIGITE COM ,">
+            <input Id="Peso" type="Number" step="0.01" title="DIGITE COM ," required>
             <button id="Botao" onclick="Enviar(event)">CONFIRMAR</button>
             <!-- O botão precisa ter uma Função para que ele funcione, no caso o Enviar() -->
         </form>
