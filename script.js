@@ -29,13 +29,11 @@ function Enviar(event) {
 
     if (nome == "" || peso == "" || altura == "") { //ESTOU DIZENDO QUE CASO QUALQUER UM DESSES ESTEJA VAZIO, IRÁ INTERROMPER O CÓDIGO! 
         window.alert('POR FAVOR, PREENCHER OS DADOS CORRETAMENTE!!! ')
-    } else {
-        window.alert(`Meu nome é ${nome}, tenho ${altura}m de altura e peso ${peso}Kg`);
     }
     var calculo = peso / (altura * altura);
     imc = calculo.toFixed(2).replace(',', '.')
     document.getElementById("Titulo").innerHTML = `O seu IMC é ${imc}`; //ESTOU ALTERANDO O NOME DO TITULO PARA O VALOR DO CALCULO IMC
-    window.alert(imc);
+   
     document.getElementById("Result").style.fontSize = "50px";
     //EU VERIFICO ABAIXO OS PARAMETROS E GUIO-OS PARA A INFORMAÇÃO DE ACORDO COM O IMC CALCULADO
     if (imc < 18.5) {
